@@ -6,7 +6,7 @@ const PasswordGenerator = () => {
   const [includeUppercase, setIncludeUppercase] = useState(true);
   const [includeLowercase, setIncludeLowercase] = useState(true);
   const [includeNumbers, setIncludeNumbers] = useState(true);
-  const [includeSymbols, setIncludeSymbols] = useState(true);
+  const [includeSymbols, setIncludeSymbols] = useState(false);
   const [password, setPassword] = useState("");
   const [strength, setStrength] = useState("");
 
@@ -63,6 +63,7 @@ const PasswordGenerator = () => {
   };
 
   return (
+    // standard ui/css
     <div className="password-generator">
       <h2>Password Generator</h2>
       <div className="controls">
